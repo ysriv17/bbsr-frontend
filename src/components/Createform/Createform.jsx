@@ -52,9 +52,12 @@ export default function Createform() {
             }
             ).then(function (response) {
                 console.log(response.data, "KKDedE@D#DD#")
-                if (response.data.status === true) {
+                if (response.data.status == 200) {
 
                     Navigate("/Dashboard/addroles");
+                }
+                else{
+                    window.alert("Invalid Atempt")
                 }
 
             }).catch((err) => {
