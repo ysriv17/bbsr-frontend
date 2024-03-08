@@ -23,7 +23,7 @@ function App() {
           </Route>
 
         </Route>
-        <Route path="/addrole" index element={<Createform />} />
+        
       </Routes>
 
     </BrowserRouter>
