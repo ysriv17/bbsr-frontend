@@ -54,6 +54,8 @@ export default function LoginPage() {
                     headers: {
                         'Content-Type': 'application/json',
                         'Access-Control-Allow-Origin':'*',
+                        'Access-Control-Allow-Origin' : 'https://eximlogistics.netlify.app/'
+
                     }
                 })
                 .then(function (response) {
