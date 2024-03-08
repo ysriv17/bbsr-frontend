@@ -53,7 +53,7 @@ export default function LoginPage() {
                 {
                     headers: {
                         'Content-Type': 'application/json',
-                        'Access-Control-Allow-Origin' : 'https://eximlogistics.netlify.app/'
+                        'Access-Control-Allow-Origin' : 'https://bbsr-backend.onrender.com'
 
                     }
                 })
