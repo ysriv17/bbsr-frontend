@@ -60,7 +60,7 @@ export default function LoginPage() {
                 .then(function (response) {
                     console.log(response.data,response.status, "PPPPPPPPPPPPPPPPPPPPPPPPPPP")
                     localStorage.setItem("accesstoken",`${response.data.accesstoken}`)
-                    if (response.status == 200) {
+                    if (response.status == 201) {
 
                         Navigate('/Dashboard')
                 }
