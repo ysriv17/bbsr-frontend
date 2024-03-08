@@ -58,9 +58,9 @@ export default function LoginPage() {
                     }
                 })
                 .then(function (response) {
-                    console.log(response.data, "PPPPPPPPPPPPPPPPPPPPPPPPPPP")
+                    console.log(response.data,response.status, "PPPPPPPPPPPPPPPPPPPPPPPPPPP")
                     localStorage.setItem("accesstoken",`${response.data.accesstoken}`)
-                    if (response.data.status == 200) {
+                    if (response.status == 200) {
 
                         Navigate('/Dashboard')
                 }
