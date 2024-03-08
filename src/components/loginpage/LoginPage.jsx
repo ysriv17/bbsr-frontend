@@ -34,7 +34,7 @@ export default function LoginPage() {
 
         }
         else {
-            window.alert("invailed email")
+            window.alert("invailed password")
             return false;
         }
     }
@@ -53,7 +53,8 @@ export default function LoginPage() {
                 {
                     headers: {
                         'Content-Type': 'application/json',
-                        'Access-Control-Allow-Origin' : '*'
+                        // 'Access-Control-Allow-Origin' : '*'
+                        'Access-Control-Allow-Origin' : 'https://bbsr-backend.onrender.com'
 
                     }
                 })
