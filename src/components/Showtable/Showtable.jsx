@@ -5,7 +5,7 @@ function Showtable() {
   const [data, setData] = useState([])
   const [column, setColumn] = useState([])
   useEffect(() => {
-    axios.get("http://localhost:3001/admin/showall").then((res) => {
+    axios.get("https://bbsr-backend.onrender.com/admin/showall").then((res) => {
      
    
       res.data.forEach((element) => {
