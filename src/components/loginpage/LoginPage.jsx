@@ -53,7 +53,7 @@ export default function LoginPage() {
                 {
                     headers: {
                         'Content-Type': 'application/json',
-                        'Access-Control-Allow-Origin':'*'
+                        'Access-Control-Allow-Origin':'*',
                     }
                 })
                 .then(function (response) {
