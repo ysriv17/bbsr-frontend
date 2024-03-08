@@ -60,8 +60,15 @@ export default function LoginPage() {
                 .then(function (response) {
                     console.log(response.data, "PPPPPPPPPPPPPPPPPPPPPPPPPPP")
                     localStorage.setItem("accesstoken",`${response.data.accesstoken}`)
-                    Navigate('/Dashboard')
-                    return response.data
+                    if (response.data.status == 200) {
+
+                        Navigate('/Dashboard')
+                }
+                else{
+                    window.alert("Invalid Atempt")
+                }
+                    // Navigate('/Dashboard')
+                    // return response.data
                 }).catch((err) => {
 
                     console.log(err, "error in sending")
