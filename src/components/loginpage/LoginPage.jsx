@@ -48,12 +48,12 @@ export default function LoginPage() {
                 "password": `${password}`
             }
             console.log("imhere", data)
-            await Axios.post("https://bbsr-backend.onrender.com/admin/login",
+            await Axios.post("https://bbsr-backend-2.onrender.com/admin/login",
                 data,
                 {
                     headers: {
                         'Content-Type': 'application/json',
-                        'Access-Control-Allow-Origin' : 'https://bbsr-backend.onrender.com'
+                        'Access-Control-Allow-Origin' : '*'
 
                     }
                 })
