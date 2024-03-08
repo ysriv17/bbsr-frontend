@@ -54,7 +54,7 @@ export default function LoginPage() {
                     headers: {
                         'Content-Type': 'application/json',
                         // 'Access-Control-Allow-Origin' : '*'
-                        'Access-Control-Allow-Origin' : 'https://bbsr-backend.onrender.com'
+                        'Access-Control-Allow-Origin' : 'https://bbsr-backend-2.onrender.com'
 
                     }
                 })
